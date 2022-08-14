@@ -1,3 +1,4 @@
-# TestSite
+# Feedback form
 
-A simple feedback form (client side)
+A simple feedback form.
+Data validation is server-side.
