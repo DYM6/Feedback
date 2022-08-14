@@ -4,12 +4,13 @@
 //инициализация полей
 $userFirstName = $userSurname = $userPatronymic = $userEMail = $Message = "";
 
-//запись в поля из js
-$userFirstName = $_POST['userFirstName'];
-$userSurname = $_POST['userSurname'];
-$userPatronymic = $_POST['userPatronymic'];
-$userEMail = $_POST['userEMail'];
-$Message = $_POST['Message'];
+//запись в поля из js с обрезкой
+$trimmed_characters = "\0../,:..@,^..`,~";
+$userFirstName = trim($_POST['userFirstName'], $trimmed_characters.",0..9");
+$userSurname = trim($_POST['userSurname'], $trimmed_characters.",0..9");
+$userPatronymic = trim($_POST['userPatronymic'], $trimmed_characters.",0..9");
+$userEMail = trim($_POST['userEMail'], $trimmed_characters);
+$Message = trim($_POST['Message'],$trimmed_characters);
 
 //проверки значений полей
 $max_field_length=20;
