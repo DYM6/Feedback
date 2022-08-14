@@ -1,0 +1,27 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+table, td, th 
+{
+  border: 1px solid maroon;
+  padding: 5px;
+}
+
+th {text-align: left;}
+
+.comment
+{
+    padding: 2%;
+    margin: 8px 0 8px 0;
+    background-color: gainsboro;
+    color: black;
+}
+
+.comment-headline
+{
+	font-style: italic;
+	color: maroon;
+}

@@ -1,0 +1,138 @@
+*
+{
+	padding: 0;
+	margin: 0 auto;
+}
+
+html
+{
+	background-color: wheat;
+}
+
+body, header, footer
+{
+	width: 930px;
+}
+
+body
+{
+	--margin-bottom: 0; 
+	--bottom: 0;
+	height: 100vh;
+	padding:0;
+	font-family: Arial, sans-serif;
+	color: maroon;
+	background-color: white;
+}
+
+/*Цвет контрастных элементов*/
+header, footer, button
+{
+	background-color: maroon;
+}
+
+header, footer
+{
+	--border: 2px solid red;
+	position: relative;
+	color: white;
+}
+
+header
+{
+	top: 0;	
+}
+
+footer
+{
+	bottom: 0;
+	text-align: center;
+	padding: 10px 0px 0px 0px;
+}
+
+section
+{
+	padding: 10px;
+}
+
+/*Контейнер с формой*/
+.container-top
+{
+	--margin-top: 4%; 
+}
+
+/*Контейнер со списком*/
+.container-bottom
+{
+	--border: 2px solid blue; 
+	background-color: white; 
+	bottom:0px; 
+	margin-top: 30%; 
+	margin-bottom: 0; 
+}
+
+/*Отступы заголовков*/
+h1, p{ padding: 0px 0px 0px 12px; }
+
+
+/*Поля ввода*/
+input, textarea 
+{    
+  width: 100%;    
+  --padding: 12px 12px 12px 0;    
+  padding: 4px 4px 4px 4px;   
+  border: 1px solid maroon;          
+  resize: none;    
+}  
+
+/*Кнопка отправки*/
+button 
+{
+  color: white;      
+  padding: 4px 20px; 
+  border: none;        
+  cursor: pointer;    
+  float: left;    
+}    
+
+/*Список сообщений*/
+.container-scrollable
+{	
+	height: calc(100% - 428px);
+	--height: calc(100% - 41.6vh);
+	overflow-x: auto;
+}
+
+/*Скрытие полос прокрутки: Crome */
+.container-scrollable::-webkit-scrollbar 
+{
+  display: none;
+}
+
+/*Скрытие полос прокрутки: IE and Edge, Firefox */
+.container-scrollable 
+{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* поля формы */
+.inputarea
+{    
+  float: left;     
+  width: 100%;  
+  margin-top: 6px;    
+   
+}    
+
+/* строка вывода сообщений об ошибке */
+.hint-label
+{
+	margin-top: 6px;
+	margin-bottom: 6px;  
+	float: left;  
+	padding: 4px 0 4px 0 4px ; 
+	font-style: italic;
+	font-size: 12;
+	color: red;
+}

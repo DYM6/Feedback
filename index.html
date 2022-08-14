@@ -1,0 +1,63 @@
+<html>
+
+	<head>
+		<title>Обратная свзь</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="style.css">
+		<script src="index.js"></script>
+	</head>
+	
+	<body>
+	
+		<header>
+			<h1>
+			Обратная связь
+			</h1>
+		</header>
+		
+		<section > 
+			
+			<div class="container-top">
+				<h3>Отправить сообщение</h3>
+				<form>
+						<div class="inputarea"> 
+						<input type="text" id="userSurname" name="userSurname" placeholder="Фамилия"/>
+						</div>
+						<div class="inputarea">    
+							<input type="text" id="userFirstName" name="userFirstName" placeholder="Имя" />
+						</div>
+						<div class="inputarea"> 
+						<input type="text" id="userPatronymic" name="userPatronymic" placeholder="Отчество"/>
+						</div>
+						<div class="inputarea"> 
+						<input type="text" id="EMail" name="EMail" placeholder="Электронная почта"/>
+						</div>
+						<div class="inputarea">    
+							<textarea cols=115 rows=6 id="Message" name="Message" placeholder="Текст сообщения (до 65535 символов)" ></textarea>
+						</div>	
+						<div class="inputarea"> 
+						<button type="Button" id="SendMessageButton" onclick="XMLSend()">Отправить сообщение</button>
+						
+						</div>
+						<label class="hint-label" id="hint" ></label>
+				</form>
+			</div>
+		</section>
+
+		<section class="container-bottom">
+			<div >
+				<h3>Последние сообщения</h3>
+				<div id="messagelist" class="container-scrollable">
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<form>
+				Copyright © D. Maistrenko, 2022. All rights reserved.
+			</form>
+		</footer>
+		
+	</body>
+
+</html>
