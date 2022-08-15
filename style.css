@@ -136,3 +136,15 @@ button
 	font-size: 12;
 	color: red;
 }
+
+.error-label
+{
+	padding-right: 10px;
+	--margin-top: 6px;
+	--margin-bottom: 6px;  
+	float: right;  
+	padding: 4px 0 4px 0 4px ; 
+	--font-style: italic;
+	font-size: 12;
+	color: red;
+}

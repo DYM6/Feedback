@@ -54,7 +54,7 @@ else if (strlen($userEMail)>$max_field_length)
 else /*if (strlen($Message)/2>$max_message_length)
 {
 	echo strlen($Message);
-	echo " Превышена максимальная длина сообщения (вот же не лень тебе было все это набирать...)";
+	echo " Превышена максимальная длина сообщения";
 }
 else
 */
