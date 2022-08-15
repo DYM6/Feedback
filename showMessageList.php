@@ -6,18 +6,11 @@
 
 <body>
 <?php
-	//include 'connection.php';
-	$connection = new PDO('mysql:dbname=messages;host=localhost;port=3306', 'root', '123456');
-	$sql_query = "SELECT idMessages, userFirstName, userSurname, userPatronymic, Message, dateTime FROM messages ORDER BY idMessages DESC";
-	$result = $connection->query($sql_query);
-	while($row = $result->fetch())
-	{
-			echo "<div class='comment'>";
-				echo "<div class='comment-headline'>#" . $row["idMessages"] . " ". $row["dateTime"] ." </div>";
-				echo "<div class='comment-headline'>" . $row["userFirstName"] . " ".$row["userPatronymic"] . " ". $row["userSurname"] .  "</div><br>";
-				echo "" . $row["Message"] . "</td>";
-            echo "</div>";
-	}
+	include 'mvc.php';
+	$model = new cModel();
+	$controller = new cController($model);
+	$view = new cView($model, $controller);
+	$view->View();
 ?>
 </body>
 
